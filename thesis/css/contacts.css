@@ -1,0 +1,444 @@
+.contacts {
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+    padding-bottom: 36px;
+}
+
+.contacts__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+}
+
+.contacts__content-adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.contacts__content-text-top {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.contacts__content-text-bottom {
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.contacts__form {
+    width: 57%;
+    padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contacts__form div {
+    position: relative;
+}
+
+.contacts__form-name,
+.contacts__form-phone {
+    width: 270px;
+    padding-left: 22px;
+    font-size: 16px;
+    border: 1px solid #333333;
+}
+
+.contacts__form-name::placeholder,
+.contacts__form-phone::placeholder {
+    color: #999;
+}
+
+.just-validate-error-field {
+    border: 1px solid #D11616;
+}
+
+.just-validate-error-label {
+    font-size: 16px;
+    top: -26px;
+    left: 30px;
+}
+
+.contacts__form-name:hover,
+.contacts__form-phone:hover {
+    background: #EAEAEA;
+}
+
+.contacts__form-btn {
+    width: 330px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #9D5CD0;
+    border: 1px solid #9D5CD0;
+    background: unset;
+}
+
+.contacts__form-btn:hover {
+    color: #fff;
+    background-color: #9D5CD0;
+}
+
+.contacts__form-btn:active {
+    border: 3px solid #D1A9F0;
+    color: #fff;
+    background-color: #7943A4;
+}
+
+.contacts__form-name,
+.contacts__form-phone,
+.contacts__form-btn {
+    border-radius: 100px;
+    height: 50px;
+}
+
+
+.contacts__block-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contacts__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.contacts__block-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.contacts__block-link:hover {
+    opacity: 0.50;
+}
+
+.contacts__block-inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 7px;
+}
+
+.contacts__block-link-1 {
+    margin-right: 21px;
+    background: url('../img/Whatsapp-Icon.svg') 0 0 / cover no-repeat;
+}
+
+.contacts__block-link-2 {
+    background: url('../img/tg.svg') 0 0 / cover no-repeat;
+}
+
+@media (max-width: 1660px) {
+    .contacts__content {
+        padding-top: 21px;
+    }
+
+    .contacts__content-text-top {
+        font-size: 18px;
+    }
+
+    .contacts__content-text-bottom {
+        font-size: 12px;
+        padding-top: 7px;
+    }
+
+    .contacts__form {
+        width: 56%;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone {
+        font-size: 14px;
+        padding-left: 18px;
+        width: 203px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone,
+    .contacts__form-btn {
+        height: 38px;
+    }
+
+    .contacts__form-btn {
+        width: 234px;
+        font-size: 14px;
+    }
+
+    .contacts__block-text {
+        font-size: 18px;
+    }
+
+    .contacts__block-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contacts__block {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .contacts {
+        padding-bottom: 24px;
+    }
+
+    .contacts__content {
+        padding-top: 19px;
+    }
+
+    .contacts__content-text-top {
+        font-size: 16px;
+    }
+
+    .contacts__content-text-bottom {
+        font-size: 10.5px;
+        padding-top: 3px;
+    }
+
+    .contacts__form {
+        width: 57%;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone {
+        font-size: 11px;
+        padding-left: 17px;
+        width: 175px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone,
+    .contacts__form-btn {
+        height: 33px;
+    }
+
+    .contacts__block-inside {
+        padding-top: 2px;
+    }
+
+    .contacts__block-text {
+        font-size: 15.7px;
+    }
+
+    .contacts__block-link-1 {
+        margin-right: 13px;
+    }
+
+    .contacts__block-link {
+        width: 27px;
+        height: 27px;
+    }
+
+    .contacts__form-btn {
+        font-size: 12px;
+        width: 214px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .just-validate-error-label {
+        font-size: 11px;
+        top: -33px;
+        left: 24px;
+    }
+
+    .contacts__content-text-top {
+        font-size: 24px;
+    }
+
+    .contacts__content-text-bottom {
+        font-size: 16px;
+        padding-top: 8px;
+    }
+
+    .contacts__content {
+        padding-top: 41px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .contacts__form {
+        padding-top: 36px;
+        width: 100%;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone {
+        font-size: 16px;
+        padding-left: 25px;
+        width: 271px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone,
+    .contacts__form-btn {
+        height: 50px;
+    }
+
+    .contacts__form-btn {
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .contacts__form div {
+        width: 29%;
+    }
+
+    .contacts__form-btn {
+        font-size: 19px;
+        width: 37%;
+    }
+
+    .contacts__block-text {
+        font-size: 24px;
+    }
+
+    .contacts__block {
+        padding-top: 29px;
+    }
+
+    .contacts__block-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts__block-link-1 {
+        margin-right: 20px;
+    }
+
+    .contacts__block-inside {
+        padding-top: 6px;
+    }
+
+    .contacts {
+        padding-bottom: 42px;
+    }
+}
+
+@media (max-width: 990px) {
+    .contacts__form {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        /* justify-content: unset; */
+    }
+
+    .contacts__form div {
+        width: 48%;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone {
+        width: 100%;
+    }
+
+    .contacts__form-btn {
+        width: 47%;
+        margin-top: 13px;
+    }
+}
+
+@media (max-width: 641px) {
+
+    .contacts {
+        border: unset;
+    }
+
+    .contacts__content-text-top {
+        font-size: 18px;
+    }
+
+    .contacts__content-text-bottom {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .contacts__content {
+        padding-top: 0px;
+    }
+
+    .contacts__form div {
+        width: 100%;
+    }
+
+    .contacts__form div:first-child {
+        margin-bottom: 20px;
+    }
+
+    .contacts__form {
+        padding-top: 20px;
+    }
+
+    .contacts__form-btn {
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    .just-validate-error-label {
+        top: -19px;
+    }
+
+    .contacts__form-btn {
+        font-size: 0;
+    }
+
+    .contacts__form-btn::after {
+        content: 'Заказать';
+        font-size: 12px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-phone,
+    .contacts__form-btn {
+        height: 40px;
+    }
+
+    .contacts__block-text {
+        font-size: 17px;
+    }
+    
+    .contacts__block {
+        padding-top: 20px;
+    }
+
+    .contacts__block-link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contacts__block-inside {
+        padding-top: 14px;
+    }
+
+    #map, .ymaps-2-1-79-map {
+        height: 320px !important;
+    }
+}

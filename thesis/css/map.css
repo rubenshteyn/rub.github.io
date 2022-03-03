@@ -1,0 +1,24 @@
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+.ymaps-2-1-79-copyright__wrap {
+    display: none !important;
+}
+
+@media (max-width: 1660px) {
+    #map, .ymaps-2-1-79-map {
+        height: 517px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    #map, .ymaps-2-1-79-map {
+        height: 456px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    #map, .ymaps-2-1-79-map {
+        height: 700px !important;
+    }
+}

@@ -1,0 +1,129 @@
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+a, button {
+    white-space: nowrap;
+}
+
+a,
+button,
+input,
+textarea,
+button,
+.swiper-button-next,
+.swiper-button-prev {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.container {
+    /* max-width: 1580px; */
+    padding: 0 160px;
+}
+
+section {
+    padding-bottom: 64px;
+}
+
+section:last-child {
+    padding-bottom: 0;
+}
+
+section:first-child {
+    margin-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: inherit;
+}
+
+@media (max-width: 1660px) {
+    .container {
+        padding: 0 120px;
+    }
+
+    section:first-child {
+        margin-bottom: 59px;
+    }
+
+    section {
+        padding-bottom: 52px;
+    }
+
+    .title {
+        font-size: 37px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 104px;
+    }
+    
+    section:first-child {
+        margin-bottom: 51px;
+    }
+
+    section {
+        padding-bottom: 45px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    section:first-child {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    section {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    section:first-child {
+        margin-bottom: 51px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    section {
+        padding-bottom: 41px;
+    }
+}
