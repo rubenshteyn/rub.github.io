@@ -5,6 +5,11 @@
     outline-offset: 0;
 }
 
+h1 {
+    position: absolute;
+    opacity: 0;
+}
+
 .title {
     font-size: 48px;
     font-weight: 400;

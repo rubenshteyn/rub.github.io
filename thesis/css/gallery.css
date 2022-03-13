@@ -119,8 +119,8 @@ label {
     border-radius: 6px;
 }
 
-.choices__list--dropdown .choices__item--selectable.is-highlighted {
-    background-color: rgba(202, 202, 202, .3);
+.choices__list--dropdown #choices--m0pf-item-choice-1:hover, #choices--m0pf-item-choice-2:hover, #choices--m0pf-item-choice-3:hover {
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 

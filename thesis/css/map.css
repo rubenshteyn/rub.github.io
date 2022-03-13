@@ -5,6 +5,11 @@
     display: none !important;
 }
 
+.map__title {
+    position: absolute;
+    opacity: 0;
+}
+
 @media (max-width: 1660px) {
     #map, .ymaps-2-1-79-map {
         height: 517px !important;

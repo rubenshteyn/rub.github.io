@@ -152,6 +152,11 @@
     background: url('../img/tg.svg') 0 0 / cover no-repeat;
 }
 
+.contacts__title {
+    position: absolute;
+    opacity: 0;
+}
+
 @media (max-width: 1660px) {
     .contacts__content {
         padding-top: 21px;
