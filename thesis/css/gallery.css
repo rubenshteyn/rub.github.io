@@ -541,6 +541,10 @@ label {
         background-color: rgba(0, 0, 0, 0.9);
     }
 
+    .gallery__slider-card:hover .galery-hover {
+        opacity: 0;
+    }
+
     .gallery__content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
