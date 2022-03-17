@@ -46,6 +46,7 @@ const swiperEvents = new Swiper('.events__slider', {
   pagination: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true
   },
   navigation: {
     nextEl: '.swiper-button-next',

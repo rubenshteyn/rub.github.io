@@ -85,6 +85,10 @@ header {
     background-color: unset;
 }
 
+.header-btn:active {
+    background-image: url('../img/voiti-focus.svg');
+}
+
 .header-btn:hover {
     background-image: url('../img/voiti-active.svg');
 }
@@ -150,13 +154,19 @@ header {
 
 /* !simplebar */
 
-.simplebar-track.simplebar-vertical {
+.simplebar-track, .simplebar-track.simplebar-vertical {
+    background-color: #000000;
+    width: 2px;
     top: 40px;
-    width: 6px;
+    right: 20px;
+    height: 220px;
 }
 
-.simplebar-track {
-    right: 17px;
+.simplebar-scrollbar {
+    display: block;
+    width: 2px;
+    height: 28px !important;
+    background-color: #fff;
 }
 
 /* !simplebar */
@@ -242,19 +252,83 @@ header {
 }
 
 .header-dropdown-list-link-1 {
-    background: url('../img/birmingham-museums-trust-2.png') 0 0 / cover no-repeat;
+    background: url('../img/tintoretto.png') 0 0 / cover no-repeat;
 }
 
 .header-dropdown-list-link-2 {
-    background: url('../img/birmingham-museums-trust.png') 0 0 / cover no-repeat;
+    background: url('../img/fridrih.png') 0 0 / cover no-repeat;
 }
 
 .header-dropdown-list-link-3 {
-    background: url('../img/birmingham-museums-trust-3.png') 0 0 / cover no-repeat;
+    background: url('../img/leonardo.png') 0 0 / cover no-repeat;
 }
 
 .header-dropdown-list-link-4 {
-    background: url('../img/birmingham-museums-trust.png') 0 0 / cover no-repeat;
+    background: url('../img/verokko.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-5 {
+    background: url('../img/mone.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-6 {
+    background: url('../img/sislay.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-7 {
+    background: url('../img/mane.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-8 {
+    background: url('../img/renuar.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-9 {
+    background: url('../img/vangog.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-10 {
+    background: url('../img/sezan.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-11 {
+    background: url('../img/gogen.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-12 {
+    background: url('../img/sera.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-13 {
+    background: url('../img/candinsky.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-14 {
+    background: url('../img/marinetti.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-15 {
+    background: url('../img/malevich.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-16 {
+    background: url('../img/pikaso.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-17 {
+    background: url('../img/karra.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-18 {
+    background: url('../img/pratella.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-19 {
+    background: url('../img/severini.png') 0 0 / cover no-repeat;
+}
+
+.header-dropdown-list-link-20 {
+    background: url('../img/balla.png') 0 0 / cover no-repeat;
 }
 
 .header-bottom-search {
@@ -333,6 +407,7 @@ header {
     .header-btn {
         font-size: 13px;
         padding: 2px 3px 2px 22px;
+        background-position: 11% 52%;
     }
 
     .header-bottom {

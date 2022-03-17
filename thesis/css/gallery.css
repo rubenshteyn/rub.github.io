@@ -119,7 +119,9 @@ label {
     border-radius: 6px;
 }
 
-.choices__list--dropdown #choices--m0pf-item-choice-1:hover, #choices--m0pf-item-choice-2:hover, #choices--m0pf-item-choice-3:hover {
+.choices__list--dropdown #choices--m0pf-item-choice-1:hover,
+#choices--m0pf-item-choice-2:hover,
+#choices--m0pf-item-choice-3:hover {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
@@ -284,6 +286,28 @@ label {
     top: -15%;
     justify-content: space-between;
     left: 3rem;
+}
+
+.gallery__slider-card {
+    position: relative;
+}
+
+.galery-hover {
+    position: absolute;
+    display: block;
+    width: 86%;
+    height: 86%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0.5rem;
+    right: 0;
+    opacity: 0;
+}
+
+.gallery__slider-card:hover .galery-hover {
+    opacity: 1;
 }
 
 @media (max-width: 1660px) {
