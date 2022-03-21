@@ -27,10 +27,13 @@ textarea,
 button,
 .swiper-button-next,
 .swiper-button-prev,
-.galery-hover {
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+.galery-hover,
+.header-hide,
+.header-burger,
+.header-logo {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .container {

@@ -153,6 +153,11 @@ label {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.choices__item--choice:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
 .is-open .choices__inner {
     z-index: 99;
     border-radius: 6px;
