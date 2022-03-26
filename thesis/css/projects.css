@@ -607,3 +607,22 @@
         padding-bottom: 50px;
     }
 }
+
+@media (max-width: 320px) {
+    .projects .projects__title {
+        padding-top: 41px;
+        margin-bottom: 12px;
+    }
+
+    .projects__content {
+        padding-top: 13px;
+    }
+
+    .projects__slider-container {
+        padding-top: 14px;
+    }
+    
+    .projects {
+        padding-bottom: 49px;
+    }
+}

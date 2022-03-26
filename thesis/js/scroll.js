@@ -10,3 +10,16 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+const smoothAuthors = document.querySelectorAll('span[data-path^=""]');
+for (let smoothAuthor of smoothAuthors) {
+    smoothAuthor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothAuthor.getAttribute('data-path');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};

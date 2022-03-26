@@ -599,3 +599,23 @@
     }
     
 }
+
+@media (max-width: 320px) {
+    .catalog__author {
+        margin-top: 53px;
+    }
+
+    .catalog__author-name, .catalog__author-unknown-name {
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+
+    .catalog__author-date, .catalog__author-unknown-date {
+        font-size: 12px;
+    }
+
+    .catalog__author-description {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}

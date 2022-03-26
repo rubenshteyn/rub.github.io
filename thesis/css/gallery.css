@@ -295,6 +295,7 @@ label {
 
 .gallery__slider-card {
     position: relative;
+    cursor: pointer;
 }
 
 .galery-hover {
@@ -313,6 +314,14 @@ label {
 
 .gallery__slider-card:hover .galery-hover {
     opacity: 1;
+}
+
+/* .gallery__slider-card:active .gallery__slider-card: {
+    background-color: #C283F3;
+} */
+
+.gallery__slider-card-active {
+    
 }
 
 @media (max-width: 1660px) {
@@ -660,4 +669,18 @@ label {
         left: 30%;
     }
 
+}
+
+@media (max-width: 320px) {
+    .gallery .swiper-button-next {
+        left: 62%;
+    }
+
+    .gallery .swiper-button-prev {
+        left: 28%;
+    }
+
+    .gallery .swiper-pagination {
+        left: 44%;
+    }
 }
