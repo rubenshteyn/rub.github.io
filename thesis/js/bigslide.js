@@ -1,10 +1,12 @@
-document.querySelectorAll('.gallery__slider-card')
 document.querySelectorAll('.gallery__slider-card').forEach(function(slideImg) {
     slideImg.addEventListener('click', function(event) {
         const item = event.currentTarget.dataset.item
-        document.querySelectorAll('.gallery__slider-card').forEach(function(tabContent)  {
-            tabContent.classList.remove('gallery__slider-card-active')
+        document.querySelectorAll('.popup-close').forEach(function(closePopup){
+            closePopup.addEventListener("click", function() {
+                document.querySelector(`[data-popup="${item}"]`).classList.remove('popup-open')
+            })
         })
-        document.querySelector(`[data-item="${item}"]`).classList.add('gallery__slider-card-active')
+        document.querySelector(`[data-popup="${item}"]`).classList.add('popup-open')
     })
 })
+
