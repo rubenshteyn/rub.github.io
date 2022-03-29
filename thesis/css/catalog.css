@@ -170,10 +170,14 @@
     border-bottom: 1px solid #9D5CD0;
 }
 
-.catalog__list-item-author__span:active,
-.catalog__list-item-author__span:focus {
+.catalog__list-item-author__span:active {
     color: #7943A4;
     border-bottom: 1px solid #fff;
+}
+
+.catalog__list-item-author__span:focus {
+    color: #fff;
+    background-color: #7943A4;
 }
 
 .is-active {
