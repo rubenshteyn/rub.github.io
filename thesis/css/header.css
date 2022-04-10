@@ -234,7 +234,7 @@ header {
     color: #C283F3;
 }
 
-.active--btn .arrow-header-focus {
+.header-bottom-btn:focus-visible .arrow-header-focus, .active--btn .arrow-header-focus {
     opacity: 1;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);

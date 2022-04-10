@@ -145,11 +145,6 @@
 
 .contacts__block-link-1 {
     margin-right: 21px;
-    background: url('../img/Whatsapp-Icon.svg') 0 0 / cover no-repeat;
-}
-
-.contacts__block-link-2 {
-    background: url('../img/tg.svg') 0 0 / cover no-repeat;
 }
 
 .contacts__title {
