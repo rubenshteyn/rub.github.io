@@ -1,13 +1,16 @@
-document.querySelector('.header-btn-outside').addEventListener('click', function() {
-    document.querySelector('.header-hide').classList.add('header-disclosed')
-    document.querySelector('.header-btn-outside').classList.add('none')
-    document.querySelector('.header-logo').classList.add('none')
-    document.querySelector('.header-burger').classList.add('none')
-})
 
-document.querySelector('.header-hide-close').addEventListener("click", function () {
-    document.querySelector('.header-hide').classList.remove('header-disclosed')
-    document.querySelector('.header-btn-outside').classList.remove('none')
-    document.querySelector('.header-logo').classList.remove('none')
-    document.querySelector('.header-burger').classList.remove('none')
-})
+
+if ($(window).height() >= 768) {
+    $('.header-btn-outside').on('click', () => {
+        $('.header-hide').toggleClass('header-disclosed')
+        $('.header-btn-outside').toggleClass('none')
+        $('.header-logo').toggleClass('none')
+        $('.header-burger').toggleClass('none')
+    })
+    $('.header-hide-close').on('click', () => {
+        $('.header-hide').removeClass('header-disclosed')
+        $('.header-btn-outside').removeClass('none')
+        $('.header-logo').removeClass('none')
+        $('.header-burger').removeClass('none')
+    })
+}

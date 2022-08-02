@@ -29,6 +29,19 @@ footer {
     margin-right: 19px;
 }
 
+.footer-social-link svg path {
+    fill: #fff;
+}
+
+.footer-social-link:hover svg path {
+    fill: #D1A9F0;
+}
+
+.footer-social-link:active svg path,
+.footer-social-link:focus svg path {
+    fill: #9D5CD0;
+}
+
 /* .footer-social-link-1 {
     background: url('../img/vk.svg') 0 0 / cover no-repeat;
 }

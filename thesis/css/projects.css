@@ -191,40 +191,42 @@
 
 .projects .swiper-button-next::after,
 .projects .swiper-button-prev::after {
-    font-size: 0;
+    font-size: 10px;
+    color: #000;
 }
 
 .projects .swiper-button-next,
 .projects .swiper-button-prev {
     width: 30px;
     height: 30px;
+    border: 2px solid #ECECEC;
+    background-color: #ECECEC;
+    border-radius: 50%;
 }
+
+.projects .swiper-button-next:hover,
+.projects .swiper-button-prev:hover {
+    border-color: #D1A9F0;
+    background-color: #D1A9F0;
+}
+
+.projects .swiper-button-next:active,
+.projects .swiper-button-prev:active,
+.projects .swiper-button-next:focus,
+.projects .swiper-button-prev:focus {
+    border-color: #9D5CD0;
+    background-color: #D1A9F0;
+}
+
 
 .projects .swiper-button-next {
     right: 0;
-    background: url('../img/next-arrow.svg') 0 0 / cover no-repeat;
 }
 
 .projects .swiper-button-prev {
     left: 0;
-    background: url('../img/prev-arrow.svg') 0 0 / cover no-repeat;
 }
 
-.projects .swiper-button-next:hover {
-    background: url('../img/next-arrow-hover.svg') 0 0 / cover no-repeat;
-}
-
-.projects .swiper-button-prev:hover {
-    background: url('../img/prev-arrow-hover.svg') 0 0 / cover no-repeat;
-}
-
-.projects .swiper-button-next:active {
-    background: url('../img/next-arrow-active.svg') 0 0 / cover no-repeat;
-}
-
-.projects .swiper-button-prev:active {
-    background: url('../img/prev-arrow-active.svg') 0 0 / cover no-repeat;
-}
 
 @media (max-width: 1660px) {
 
@@ -621,7 +623,7 @@
     .projects__slider-container {
         padding-top: 14px;
     }
-    
+
     .projects {
         padding-bottom: 49px;
     }

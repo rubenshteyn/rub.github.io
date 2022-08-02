@@ -37,6 +37,10 @@
     padding-top: 8px;
 }
 
+.contacts__block-link object {
+    width: 100%;
+}
+
 .contacts__form {
     width: 57%;
     padding-top: 5px;
@@ -197,8 +201,37 @@
         height: 28px;
     }
 
+    .contacts__block-link-1 .what-path-1 {
+        fill: #30BF39;
+    }
+
+    .contacts__block-link-1 .what-path-2 {
+        fill: #FFF;
+    }
+
+    .contacts__block-link-2 .tg-path-1 {
+        fill: #26A5E4;
+    }
+
+    .contacts__block-link-2 .tg-path-2 {
+        fill: #FFFFFF;
+    }
+
+    .contacts__block-link-1:active .what-path-1,
+    .contacts__block-link-1:focus .what-path-1,
+    .contacts__block-link-2:active .tg-path-1,
+    .contacts__block-link-2:focus .tg-path-1 {
+        border: 1px solid #9D5CD0;
+    }
+
     .contacts__block {
         padding-top: 5px;
+    }
+
+    .just-validate-error-label {
+        font-size: 13px;
+        top: -25px;
+        left: 20px;
     }
 }
 

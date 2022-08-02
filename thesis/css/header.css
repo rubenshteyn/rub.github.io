@@ -64,10 +64,16 @@ header {
     background: #000;
 }
 
+.header-nav-list-item__link:focus-visible,
+.header-btn:focus-visible,
+.header-bottom-btn:focus-visible {
+    color: #7943A4;
+}
+
 .header-nav-list-item__link:focus,
 .header-btn:focus,
 .header-bottom-btn:focus {
-    background-color: #7943A4;
+    color: #7943A4;
 }
 
 .header-nav-list-item__link:hover,
@@ -85,16 +91,9 @@ header {
     background-color: unset;
 }
 
-.header-btn:active {
-    background-image: url('../img/voiti-focus.svg');
-}
-
-.header-btn:hover {
-    background-image: url('../img/voiti-active.svg');
-}
-
-
 .header-btn {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     font-size: 18px;
     font-weight: 400;
@@ -102,10 +101,28 @@ header {
     color: #fff;
     border: unset;
     background-color: unset;
-    background-image: url('../img/voiti.svg');
-    background-position: 11% 38%;
-    background-size: 13px;
-    background-repeat: no-repeat;
+}
+
+.header-btn span {
+    display: block;
+}
+
+.header-btn svg path {
+    fill: #fff;
+}
+
+.header-btn svg {
+    margin-right: 5px;
+}
+
+.header-btn:hover svg path {
+    fill: #C283F3;
+}
+
+.header-btn:active svg path,
+.header-btn:focus-visible svg path,
+.header-btn:focus svg path {
+    fill: #7943A4;
 }
 
 .header-nav-content {
@@ -234,7 +251,8 @@ header {
     color: #C283F3;
 }
 
-.header-bottom-btn:focus-visible .arrow-header-focus, .active--btn .arrow-header-focus {
+.header-bottom-btn:focus-visible .arrow-header-focus,
+.active--btn .arrow-header-focus {
     opacity: 1;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -249,6 +267,7 @@ header {
 
 .header-bottom-btn {
     font-family: 'OpenSans';
+    position: relative;
     font-size: 18px;
     padding: 5px 7px 5px 6px;
     font-weight: 400;
@@ -257,13 +276,21 @@ header {
     background-color: unset;
 }
 
-.arrow-header-active,
-.arrow-header-focus {
-    opacity: 0;
-    left: 0;
-    bottom: 4px;
+.header-bottom-btn::after {
+    content: '\005E';
     position: absolute;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 5px;
+    right: -5px;
+}
 
+.header-bottom-btn:focus::after {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 7px;
 }
 
 .header-bottom-item {
@@ -388,6 +415,7 @@ header {
     width: 218px;
     border: unset;
     padding-bottom: 3px;
+    color: rgba(255, 255, 255, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
     background: unset;
     cursor: pointer;
@@ -404,10 +432,33 @@ header {
     transition: all 0.2s ease;
 }
 
+.header-bottom-search-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.header-bottom-search-input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+
 .header-bottom-search-input::placeholder {
     font-size: 18px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.85);
+}
+
+.header-bottom-search-input:focus::placeholder,
+.header-bottom-search-input:active::placeholder {
+    color: transparent;
 }
 
 .header-bottom-search-btn {
@@ -424,7 +475,7 @@ header {
 @media (max-width: 1660px) {
 
     header {
-        height: 74px;
+        height: 70px;
     }
 
     .header-logo {
@@ -486,12 +537,12 @@ header {
         width: 167px;
     }
 
-    .header-bottom-search-input::placeholder {
+    .header-bottom-search-input {
         font-size: 15px;
     }
 
     .header-dropdown {
-        top: 40px;
+        top: 39px;
     }
 
     .header-dropdown-list-link {
@@ -550,7 +601,7 @@ header {
     }
 
     .header-dropdown {
-        top: 35px;
+        top: 36px;
         width: 269px;
         height: 269px;
     }
@@ -593,6 +644,14 @@ header {
         -webkit-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
+    }
+
+    .header-btn span {
+        margin-right: auto;
+    }
+
+    .header-btn svg {
+        margin-left: auto;
     }
 
     .open {
@@ -648,7 +707,7 @@ header {
     }
 
     .header-nav-list-item {
-        marginbottom: 16px;
+        margin-bottom: 16px;
     }
 
     .header-nav-list-item__link {
@@ -659,13 +718,12 @@ header {
     .header-btn {
         font-size: 18px;
         width: 248px;
+        text-align: center;
         padding: 16px 0px 16px 0px;
         position: absolute;
         bottom: 27px;
         border: 2px solid #9D5CD0;
         border-radius: 100px;
-        background-position: 32% center;
-        background-size: 15px;
         margin-left: 0;
     }
 
